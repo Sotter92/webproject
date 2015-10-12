@@ -1,0 +1,498 @@
+@charset "utf-8";
+/* Styling for personalSite */
+/* Global */
+@font-face {
+    font-family: "code";
+    src: url("codeLight.woff") format('woff');
+}
+
+body { background-color: #000;
+		color: #ACBABA;
+		font-family: calibri, verdana;}
+
+/* pageHeader */
+#header {  color: #266;
+		   width:100%; 
+		   position:fixed;}
+		   
+#navWrapper { position:fixed;
+			height:250px;
+			background:#000;
+			width:100%;}
+				 
+li, a { text-decoration: none;
+	list-style-type:none; 
+			color: #FFF; }
+			  
+/*navigation*/
+.navHead {font-size:30px;}
+	
+nav ul li:hover .navHead { color:#266;}
+		
+nav { z-index: 1;
+	display:inline-block;}
+	
+nav li{ margin-left:-2.5em;}
+	
+	#spiral { position:absolute;
+			  left:-440px;
+			  top: -300px;
+			  opacity:1;
+			}
+
+	nav {
+		position: absolute;
+		position:fixed;
+		top: 270px;
+		left: 580px;
+		font-family: code, calibri, verdana, arial;}
+	
+	nav #portfolio,#skills,#education,#contact{opacity: 0.5;
+									z-index:1;}
+		
+	nav:hover #portfolio{opacity: 1;}
+	nav:hover #skills{opacity: 1;}
+	nav:hover #education{opacity: 1;}
+	nav:hover #contact{opacity: 1;}
+	
+	#default { position:absolute;
+				top: -230px;
+				left: -280px;
+				z-index:1;}
+			
+	#education { position: absolute;
+				top:-250px;
+				left:-510px;}
+			
+	#social { position: absolute;
+				top:-250px;
+				left:-70px; }
+			
+	#portfolio { position: absolute;
+				top: -95px;
+				left: -40px;
+				}
+				
+	#portfolio .navHead ,#skills .navHead {font-size: 50px;}
+			
+	#skills { position: absolute;
+				top:-150px;
+				left:-530px;
+				color: #266;}
+				
+	#contact { z-index:1;
+				position:fixed;
+				position: absolute;
+				left: -50px;
+				top:-260px;
+				}
+				
+	#contactList { position:absolute; 
+					left:800px;
+					top:45px;}
+				
+	#contactList li{ float:left;
+					padding:5px;
+					vertical-align:middle;
+					}
+					
+	#contactList  p{ float:left;}
+	
+	#contactList img { margin-left: 10px; }
+					
+	#contactList li:hover a { color: #266;}
+				
+	#title { position: absolute;
+			top:30px;
+			left:525px;
+			font-size: 3.5vw;
+			width:90%;
+			border-bottom: solid #022 10px;
+			position:fixed;
+			color:#266;}
+			
+		 
+	#strap { position:absolute;
+			padding-top:60px;
+			top:30px;
+			left:550px;
+			font-size: 2.5vw;
+			position:fixed;}
+					
+/*main content*/
+
+#mainContent  { z-index: 0;
+				background: #000;
+				float:left;
+				margin-top: 250px;
+				}
+				
+#mainContent #mainHeader { background-color: #111;
+					padding-left:5px;
+					border-left: 5px solid #022;
+					z-index:0;
+					width:100%;
+					position:fixed;}
+				
+/*skills page*/
+			
+#marginSkills { margin-top:80px;}
+
+.skillsArt { border-left:solid #266 5px;
+			width:95%; 
+			margin-left:15px;
+			background:#111;}
+			
+
+			
+/*portfolio page*/
+
+.portfolioWidth {width:3250px;
+				margin-top: 250px;}
+			
+.portfolioArt {margin-top:80px;}	
+
+.description  { border-right:#266 solid;
+				padding:5px;
+				height:220px;
+				float:left;
+				text-align:right;}
+				
+.sample { opacity:0.5; }
+
+article:hover .sample { opacity: 1; }
+
+article {padding-left:10px;
+	  margin-bottom: 25px;
+	  float:left;}
+				
+article:hover #description {background:#022;}
+
+/*JavaScript Checks*/
+.no-js #warning {display:block;}
+#warning {display:none;}
+.js #warning {display:none;}
+.no-js #navWrapper {z-index:0;}
+#navWrapper {z-index:0;}
+.js #navWrapper {z-index:2;}
+
+/*sample pages*/
+.sampleHeader {margin-left:50%;
+				margin-top:10px;
+				position:fixed;}
+				
+/*number game*/
+			
+.green { background-color: #050; }
+
+.red { background-color: #f00; }
+
+.match { background-color: #299; }
+
+/*hangman*/
+
+.hangmanArt {margin-left:100px;}
+
+#output{ float:left;
+		margin:100px;}
+
+#word {float:left;}
+
+#hangman {float:left;
+			visibility:hidden;
+			background-color:#fff;
+			margin-left:160px;}
+
+#outputHang {float:left;}
+				
+.hangmanGame { margin:0;}
+
+/*cat*/
+#cat {float:left;
+		margin:25%;}
+		
+/*canvas Painting*/
+
+canvas { border: solid #266;
+		margin:10%;}
+			
+/*education page*/
+
+.educationArt{ border-left:solid #266 5px;	
+			margin-left:15px;
+			height:450px;
+			margin-top:80px;}
+			
+/*index page*/
+.row2 { padding-left: 10px; }
+
+			
+#welcomeHeader { 
+				z-index:0;
+				width:55%;
+				padding-left:50%;
+				border-bottom: solid #266;
+				}
+				
+.mainPage { width: 90%;
+			margin-left:5%;}
+				
+#intro { 
+		background-color:#111;
+		width:70%;
+		padding:10px;
+		display:inline-block;}
+				
+#mainContent .imageMe { width:265px;}
+
+#me {display:inline-block;
+width:25%;
+}
+
+#headerText {width:10%;
+			z-index:1;}
+			
+#headerTextMain{width: 30%; }
+
+/*contact style*/
+
+#mainHeader p ,h2{ display:inline-block;}
+		
+#message { width: 90%;}
+			
+form label { background: #266;
+			float:left;
+			padding:15px;
+			margin-bottom:25px;
+			}
+			
+.contactPage #mainHeader {margin-top:-80px;}	
+.contactPage {width:100%;}
+			
+form input { padding: 13px;
+			margin-left:0px;
+			float:left;
+			width:20%;
+			}
+			
+button { background: #111;
+		color: #266;
+		border:solid 2px #266;
+		font-size: 18px;
+		padding: 11px; 
+		margin-left:5px;
+		float:left;
+		}
+	
+form {margin-top:80px;
+	margin-left:10px;}
+		
+button:hover { border: solid 2px #9aa;
+			background:#222;
+			 color: #9aa;}	
+			 
+#mobileContact {display:none;}
+
+/* horizontal tablet*/
+@media only screen and (max-width:1150px) {
+	#contactList { display:none;}
+	
+	#intro { width:90%;}
+	
+	#welcomeHeader{ width:100%;
+					margin-right:2%;
+					margin-top:2.5%;}
+					
+	.sample { opacity:1; }
+	
+	#title { font-size:40px; }
+	#strap { font-size: 19px; }
+	
+	.portfolioWidth {width:3600px;
+				margin-top: 250px;}
+				
+	#email {clear:left;}
+
+	#navWrapper { position:fixed;}
+
+			
+}
+/*tablet*/
+@media only screen and (max-width:780px) {
+
+	#navWrapper { position:fixed; }
+	#default { position:absolute;
+				top: -222px;
+				left: -332px;
+				z-index:2;}
+			
+	#education { position: absolute;
+				top:-215px;
+				left:-530px;}
+			
+	#social { position: absolute;
+				top:-250px;
+				left:-70px; }
+			
+	#portfolio { position: absolute;
+				top: -90px;
+				left: -135px;
+				}
+				
+	#portfolio .navHead ,#skills .navHead {font-size: 35px;}
+			
+	#skills { position: absolute;
+				top:-130px;
+				left:-500px;
+				color: #266;}
+				
+	#contact { z-index:1;
+				position:fixed;
+				position: absolute;
+				left: -170px;
+				top:-240px;
+				}
+				
+	#spiral { z-index:1;
+			  position:absolute;
+			  left:-440px;
+			  top: -250px;
+			  width:300px;
+			  opacity:1;
+			}
+			
+	#title { position: absolute;
+			top:60px;
+			left:415px;
+			font-size:40px;}
+			
+	#strap { display:none;}
+	
+	.skillsArt li { margin-left:-2.5em;}
+	
+	.portfolioWidth {width:2250px;
+				margin-top: 250px;}
+
+					
+}
+/*mobile horizontal*/
+@media only screen and (max-width:700px) {
+	.navHead { font-size: 25px;}
+	#portfolio .navHead ,#skills .navHead {font-size: 25px;}
+
+	#spiral {display: none; }
+
+	
+	#default { display:none;}
+			
+	#education { position: absolute;
+				top: -210px;
+				left: -260px;
+				}
+
+	#portfolio { position: absolute;
+				left: -515px;
+				top:-210px;
+				}
+			
+			
+	#skills { position: absolute;
+				top: -210px;
+				left: -360px;
+				color: #266;}
+				
+	#contact { z-index:1;
+				position:fixed;
+				position: absolute;
+				top:-210px;
+				left:-100px;
+				}
+				
+	#title { z-index:1;
+			top: 5px;
+			left: 20px;
+			font-size:25px;
+			width:100%;}
+			
+	#navWrapper { height: 100px;
+					position:fixed;}
+	
+	#mainContent { margin-top:100px;}
+	
+	#desktopContact {display:block;}
+	#desktopContact header h2:first-of-type, #desktopContact header p:first-of-type {display:none;}
+	
+	
+	.portfolioWidth {width:3250px;
+				margin-top: 250px;}
+				
+	.educationArt {background:#111;
+					margin-top:0px;
+					width:100%;}
+					
+	.sampleHeader{width:100%; 
+					background-color:#000;
+					margin-left:25px;}
+					
+	#cat { margin-top:50%;}
+	
+	#educationArt1 {margin-top:90px;}
+}
+/*mobile*/
+@media only screen and (max-width:500px) {
+
+	.navHead { font-size: 100%;}
+	#portfolio .navHead ,#skills .navHead {font-size: 100%;}
+
+	#default img { width: 150px; }
+			
+	#education { left: -390px;
+				text-align:left;}
+			
+	#portfolio { left: -535px;
+				text-align:left;
+				}
+			
+	#skills {    left:-445px;
+				text-align:left;}
+				
+	#contact {	left: -295px;
+				text-align:left;
+				}
+				
+	.contactPage form {display:none;}
+				
+	#title { position:absolute;
+			top: -5px;
+			font-size:25px;
+			width:100%;
+			left:0px;
+			padding-left:5px;
+			text-align:left;}
+	
+	#welcomeHeader {width:100%;
+					padding:0%;}
+		
+	.skillsArt { margin-left:0px;
+				width:95%;}
+				
+	.skillsArt li { margin-left:-2.5em;}
+		
+	#navWrapper { height: 90px;
+				position:fixed;}
+				
+	#mainContent { margin-top:90px;}
+	
+	/*mobile Contact*/
+	#mobileContact {display:block;
+					text-align:center;}
+				
+	#mobileContact h2 {border-bottom: solid #266;}
+	
+	#mobileContact p {font-size:18px;}
+		
+	#desktopContact {display:none;}
+}
+
+
+			
